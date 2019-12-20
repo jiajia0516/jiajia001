@@ -4,17 +4,15 @@
 #include <iostream>
 #include <stdio.h>
 
-#define TANGYUAN_OR_HUAJI 0
-//#define TANGYUAN_OR_HUAJI 1
-
-
+//#define TANGYUAN_OR_HUAJI 0
+#define TANGYUAN_OR_HUAJI 1
 
 using namespace std;
 using namespace cv;
 
 void detectAndDisplay( Mat frame );
-String face_cascade_name = "/home/jiajia/workspace/opencv-4.1.0/data/haarcascades/haarcascade_frontalface_alt.xml";
-String eyes_cascade_name = "/home/jiajia/workspace/opencv-4.1.0/data/haarcascades/haarcascade_eye_tree_eyeglasses.xml";
+String face_cascade_name = "../image_overlay/haarcascade_frontalface_alt.xml";
+String eyes_cascade_name = "../image_overlay/haarcascade_eye_tree_eyeglasses.xml";
 CascadeClassifier face_cascade;
 CascadeClassifier eyes_cascade;
 
@@ -123,5 +121,5 @@ void detectAndDisplay( Mat frame )
 #endif
     }
     imshow( "result", frame );
-//    imwrite("/home/jiajia/workspace/maozi/merry_christmas.jpg",frame);
+    imwrite("../image_overlay/yourself.jpg",frame);
 }
