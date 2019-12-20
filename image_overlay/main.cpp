@@ -26,11 +26,6 @@ int main( void )
     if( !face_cascade.load( face_cascade_name ) ){ printf("--(!)Error loading\n"); return -1; };
     if( !eyes_cascade.load( eyes_cascade_name ) ){ printf("--(!)Error loading\n"); return -1; };
 
-//            frame = imread("/home/jiajia/workspace/maozi/005.jpg");//背景图片
-    // Apply the classifier to the frame
-//            if( !frame.empty() )
-//            { detectAndDisplay( frame );}
-
     VideoCapture cap(0);
     if(!cap.isOpened())  //检测是否打开成功
         return -1;
@@ -98,17 +93,6 @@ void detectAndDisplay( Mat frame )
     face_cascade.detectMultiScale( frame_gray, faces, 1.1, 2, 0|CASCADE_SCALE_IMAGE, Size(30, 30) );
     for( size_t i = 0; i < faces.size(); i++ )
     {
-//        Point center( faces[i].x + faces[i].width/2, faces[i].y + faces[i].height/2 );
-//        Mat faceROI = frame_gray( faces[i] );
-//        std::vector<Rect> eyes;
-
-//        eyes_cascade.detectMultiScale( faceROI, eyes, 1.1, 2, 0 |CASCADE_SCALE_IMAGE, Size(30, 30) );
-
-//        for( size_t j = 0; j < eyes.size(); j++ )
-//        {
-//            Point eye_center( faces[i].x + eyes[j].x + eyes[j].width/2, faces[i].y + eyes[j].y + eyes[j].height/2 );
-//            int radius = cvRound( (eyes[j].width + eyes[j].height)*0.25 );
-//        }
             resize(hatAlpha,hatAlpha,Size(faces[i].width, faces[i].height),0,0,INTER_LANCZOS4);   //叠加图片的尺寸大小
 #if TANGYUAN_OR_HUAJI  == 0
 
