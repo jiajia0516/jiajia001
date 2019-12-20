@@ -4,8 +4,8 @@
 #include <iostream>
 #include <stdio.h>
 
-//#define TANGYUAN_OR_HUAJI 0
-#define TANGYUAN_OR_HUAJI 1
+#define TANGYUAN_OR_HUAJI 0
+//#define TANGYUAN_OR_HUAJI 1
 
 using namespace std;
 using namespace cv;
