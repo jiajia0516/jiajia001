@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DECLARE_WAIT_QUEUE_HEAD	event_drv.c	/^static DECLARE_WAIT_QUEUE_HEAD(wq);$/;"	p	file:
+DEVICENAME	event_drv.c	39;"	d	file:
+KERNEL_DIR	makefile	/^KERNEL_DIR := \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+MEMDEV_IOCGETDATA	event_drv.c	35;"	d	file:
+MEMDEV_IOCPRINT	event_drv.c	34;"	d	file:
+MEMDEV_IOCSETDATA	event_drv.c	36;"	d	file:
+MEMDEV_IOC_MAGIC	event_drv.c	32;"	d	file:
+MEMDEV_IOC_MAXNR	event_drv.c	37;"	d	file:
+PWD	makefile	/^PWD := $(shell pwd)$/;"	m
+__this_module	event_drv.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	event_drv.mod.c	/^__used$/;"	v	file:
+cdev_class	event_drv.c	/^static struct class *cdev_class; $/;"	v	typeref:struct:class	file:
+cdev_t	event_drv.c	/^struct cdev *cdev_t;$/;"	v	typeref:struct:cdev
+dev	event_drv.c	/^dev_t dev=0;$/;"	v
+fops	event_drv.c	/^static const struct file_operations fops = {$/;"	v	typeref:struct:file_operations	file:
+have_data	event_drv.c	/^bool have_data = false; \/*表明设备有足够数据可供读*\/$/;"	v
+inputData	event_drv.c	/^struct input_event inputData;$/;"	v	typeref:struct:input_event
+main	event_read.c	/^ int main(void)$/;"	f	signature:(void)
+main	event_write.c	/^ int main(void)$/;"	f	signature:(void)
+name	event_drv.c	/^DECLARE_WAIT_QUEUE_HEAD(name); $/;"	v
+ubuntu_event_cleanup	event_drv.c	/^module_exit(ubuntu_event_cleanup);$/;"	v
+ubuntu_event_cleanup	event_drv.c	/^static void __exit ubuntu_event_cleanup(void)$/;"	f	file:	signature:(void)
+ubuntu_event_init	event_drv.c	/^module_init(ubuntu_event_init);$/;"	v
+ubuntu_event_init	event_drv.c	/^static int __init ubuntu_event_init(void)$/;"	f	file:	signature:(void)
+ubuntu_event_open	event_drv.c	/^static int ubuntu_event_open(struct inode *inodep, struct file *filep)$/;"	f	file:	signature:(struct inode *inodep, struct file *filep)
+ubuntu_event_read	event_drv.c	/^static ssize_t ubuntu_event_read (struct file *filep, char __user *buf, size_t count, loff_t *offset)$/;"	f	file:	signature:(struct file *filep, char __user *buf, size_t count, loff_t *offset)
+ubuntu_event_release	event_drv.c	/^static int ubuntu_event_release(struct inode *inodep, struct file *filep)$/;"	f	file:	signature:(struct inode *inodep, struct file *filep)
+ubuntu_event_write	event_drv.c	/^static ssize_t ubuntu_event_write (struct file *filep, const char __user *buf,size_t count, loff_t *offse)$/;"	f	file:	signature:(struct file *filep, const char __user *buf,size_t count, loff_t *offse)

@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DEVICENAME	mmp_drv.c	43;"	d	file:
+KERNEL_DIR	makefile	/^KERNEL_DIR := \/lib\/modules\/$(shell uname -r)\/build$/;"	m
+MEMDEV_IOCGETDATA	mmp_drv.c	39;"	d	file:
+MEMDEV_IOCPRINT	mmp_drv.c	38;"	d	file:
+MEMDEV_IOCSETDATA	mmp_drv.c	40;"	d	file:
+MEMDEV_IOC_MAGIC	mmp_drv.c	36;"	d	file:
+MEMDEV_IOC_MAXNR	mmp_drv.c	41;"	d	file:
+PAGE_SIZE	mmp_drv.c	44;"	d	file:
+PWD	makefile	/^PWD := $(shell pwd)$/;"	m
+__this_module	mmp_drv.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	mmp_drv.mod.c	/^__used$/;"	v	file:
+bufrh	mmp_drv.c	/^static char bufrh[1024]="hello drv test!";$/;"	v	file:
+cdev_class	mmp_drv.c	/^static struct class *cdev_class; $/;"	v	typeref:struct:class	file:
+cdev_t	mmp_drv.c	/^struct cdev *cdev_t;$/;"	v	typeref:struct:cdev
+dev	mmp_drv.c	/^dev_t dev=0;$/;"	v
+fops	mmp_drv.c	/^static const struct file_operations fops = {$/;"	v	typeref:struct:file_operations	file:
+main	mmp_read.c	/^ int main(void)$/;"	f	signature:(void)
+main	mmp_test.c	/^ int main(void)$/;"	f	signature:(void)
+mem_set	mmp_test.c	/^void mem_set(unsigned int *p, unsigned int color)$/;"	f	signature:(unsigned int *p, unsigned int color)
+pos	mmp_drv.c	/^unsigned long pos=0;$/;"	v
+ubuntu_lcd_cleanup	mmp_drv.c	/^module_exit(ubuntu_lcd_cleanup);$/;"	v
+ubuntu_lcd_cleanup	mmp_drv.c	/^static void __exit ubuntu_lcd_cleanup(void)$/;"	f	file:	signature:(void)
+ubuntu_lcd_init	mmp_drv.c	/^module_init(ubuntu_lcd_init);$/;"	v
+ubuntu_lcd_init	mmp_drv.c	/^static int __init ubuntu_lcd_init(void)$/;"	f	file:	signature:(void)
+ubuntu_lcd_ioctl	mmp_drv.c	/^static long ubuntu_lcd_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	file:	signature:(struct file *filp, unsigned int cmd, unsigned long arg)
+ubuntu_lcd_mmap	mmp_drv.c	/^static int ubuntu_lcd_mmap(struct file *filp, struct vm_area_struct *vma)$/;"	f	file:	signature:(struct file *filp, struct vm_area_struct *vma)
+ubuntu_lcd_open	mmp_drv.c	/^static int ubuntu_lcd_open(struct inode *inodep, struct file *filep)$/;"	f	file:	signature:(struct inode *inodep, struct file *filep)
+ubuntu_lcd_read	mmp_drv.c	/^static ssize_t ubuntu_lcd_read (struct file *filep, char __user *buf, size_t count, loff_t *offset)$/;"	f	file:	signature:(struct file *filep, char __user *buf, size_t count, loff_t *offset)
+ubuntu_lcd_release	mmp_drv.c	/^static int ubuntu_lcd_release(struct inode *inodep, struct file *filep)$/;"	f	file:	signature:(struct inode *inodep, struct file *filep)
+ubuntu_lcd_write	mmp_drv.c	/^static ssize_t ubuntu_lcd_write (struct file *filep, const char __user *buf,size_t count, loff_t *offse)$/;"	f	file:	signature:(struct file *filep, const char __user *buf,size_t count, loff_t *offse)
+virt_mem	mmp_drv.c	/^void *virt_mem; \/\/模拟的一块4k内存$/;"	v
