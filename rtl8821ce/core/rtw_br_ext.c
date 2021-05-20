@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- * Copyright(c) 2007 - 2011 Realtek Corporation. All rights reserved.
+ * Copyright(c) 2007 - 2017 Realtek Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2 of the GNU General Public License as
@@ -11,20 +11,10 @@
  * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
  * more details.
  *
- * You should have received a copy of the GNU General Public License along with
- * this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
- *
- *
- ******************************************************************************/
+ *****************************************************************************/
 #define _RTW_BR_EXT_C_
 
 #ifdef __KERNEL__
-    #include <linux/version.h>
-    #if ((LINUX_VERSION_CODE >= KERNEL_VERSION(4, 10, 0)) && (LINUX_VERSION_CODE < KERNEL_VERSION(4, 11, 0)))
-        #include <linux/netfilter.h>
-    #endif
-
 	#include <linux/if_arp.h>
 	#include <net/ip.h>
 	#include <net/ipx.h>
@@ -311,7 +301,7 @@ static int update_nd_link_layer_addr(unsigned char *data, int len, unsigned char
 	return 0;
 }
 
-
+#ifdef SUPPORT_RX_UNI2MCAST
 static void convert_ipv6_mac_to_mc(struct sk_buff *skb)
 {
 	struct ipv6hdr *iph = (struct ipv6hdr *)(skb->data + ETH_HLEN);
@@ -329,6 +319,7 @@ static void convert_ipv6_mac_to_mc(struct sk_buff *skb)
 #endif
 }
 #endif /* CL_IPV6_PASS */
+#endif /* SUPPORT_RX_UNI2MCAST */
 
 
 static __inline__ int __nat25_network_hash(unsigned char *networkAddr)

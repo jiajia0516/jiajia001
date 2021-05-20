@@ -1,24 +1,24 @@
-an-entity.html
-1.0173317E-5,/help/hdlcoder/ug/show-blocks-supported-for-hdl-code-generation.html
-1.0170542E-5,/help/signal/ref/cpsd.html
-1.0168323E-5,/help/distcomp/randn.html
-1.0168045E-5,/help/stats/x2fx.html
-1.016749E-5,/help/matlab/creating_plots/change-tick-marks-and-tick-labels-of-graph-1.html
-1.0164716E-5,/help/finance/setequality.html
-1.0164161E-5,/help/simulink/sfg/elementary-work-vectors.html
-1.0161941E-5,/help/finance/setgroupratio.html
-1.0159999E-5,/help/fixedpoint/ref/hex.html
-1.0159444E-5,/help/physmod/simscape/ref/pneumaticpressuresource.html
-1.01575015E-5,/help/lte/ref/ltecsirs.html
-1.0156947E-5,/help/simbio/ref/userdefinedlibrary.html
-1.0156947E-5,/help/simbio/ref/builtinlibrary.html
-1.0155837E-5,/help/signal/ref/rceps.html
-1.0155005E-5,/help/rtw/ref/modelheader.html
-1.0155005E-5,/help/simulink/slref/coder.ref.html
-1.0155005E-5,/help/simulink/slref/coder.wref.html
-1.0155005E-5,/help/rtw/ref/modelsource.html
-1.0154727E-5,/help/sl3d/modify-the-cad-model-virtual-world.html
-1.0154172E-5,/help/rf/ug/y2h.html
-1.0154172E-5,/help/matlab/ref/randstream.setglobalstream.html
-1.0152785E-5,/help/sldo/ug/how-to-use-fast-restart-mode-during-sensitivity-analysis.html
-1.015
+/******************************************************************************
+ *
+ * Copyright(c) 2013 - 2017 Realtek Corporation.
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of version 2 of the GNU General Public License as
+ * published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+ * more details.
+ *
+ *****************************************************************************/
+#ifndef __RTW_BTCOEX_WIFIONLY_H__
+#define __RTW_BTCOEX_WIFIONLY_H__
+
+void rtw_btcoex_wifionly_switchband_notify(PADAPTER padapter);
+void rtw_btcoex_wifionly_scan_notify(PADAPTER padapter);
+void rtw_btcoex_wifionly_connect_notify(PADAPTER padapter);
+void rtw_btcoex_wifionly_hw_config(PADAPTER padapter);
+void rtw_btcoex_wifionly_initialize(PADAPTER padapter);
+void rtw_btcoex_wifionly_AntInfoSetting(PADAPTER padapter);
+#endif
